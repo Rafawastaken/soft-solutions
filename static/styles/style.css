@@ -12,6 +12,7 @@
   --primary-hover-red: #f33501;
   --primary-red: #ef4035;
   --standard-grey: #212429;
+  --sec-white: #a1a2a4;
 }
 
 body {
@@ -87,6 +88,11 @@ body {
   background-size: 16px 16px;
 }
 
+.btn-outline-light {
+  border: 1px solid var(--primary-orange);
+  color: var(--primary-white);
+}
+
 .btn-outline-light:hover {
   font-weight: bold !important;
   background-color: var(--primary-transparent-hover) !important;
@@ -94,6 +100,7 @@ body {
   outline: none !important;
   color: var(--primary-orange);
   transition: all 0.3s ease !important;
+  border: 1px solid var(--primary-orange);
 }
 
 .btn-outline-light:focus {
@@ -104,13 +111,14 @@ body {
   box-shadow: 0 0 0 0.2rem var(--primary-orange) !important;
   background-color: var(--primary-transparent) !important;
   transition: all 0.3s ease !important;
+  border: 1px solid var(--primary-orange);
 }
 
 .btn-outline-light:active {
-  border: 1px solid var(--primary-orange) !important;
   outline: none !important;
   box-shadow: none !important;
   transition: all 0.3s ease !important;
+  border: 1px solid var(--primary-orange);
 }
 
 /************ Navbar Bootstrap Edit  ************/
@@ -615,4 +623,43 @@ nav ul li {
   align-items: center;
   justify-content: center;
   margin-top: 1.5em;
+}
+
+/* Form */
+
+.form-wraper {
+  margin: 0em 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-box {
+  margin-top: 2em;
+}
+
+.form-btn {
+  margin-top: 1em;
+}
+
+.form-text {
+  width: 100%;
+  background-color: #212429;
+  outline: var(--secondary-orange);
+  border: 1px solid var(--primary-orange);
+
+  color: var(--sec-white);
+  font-size: 18px;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.form-btn {
+  align-items: center;
+  text-align: center;
+}
+
+.btn-contatar {
+  font-size: 1.2em;
+  padding: 10px 100px;
 }
