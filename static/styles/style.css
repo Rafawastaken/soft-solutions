@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary-white: rgb(212, 212, 212);
+  --text-grey: #b8b5b5;
+  --light-grey: rgba(0, 0, 0, 0.171);
+  --med-grey: #212529;
+  --primary-orange: #ee6b34;
+  --secondary-orange: #a33100;
+  --primary-transparent: rgba(0, 0, 0, 0);
+  --primary-transparent-hover: rgba(0, 0, 0, 0.178);
+  --primary-hover-red: #f33501;
+  --primary-red: #ef4035;
+  --standard-grey: #212429;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: var(--med-grey);
+  background-size: 16px 16px;
+}
+
+/*** Tipografia  ***/
+
+.text-grey {
+  color: var(--text-grey);
+}
+
+.header-1 {
+  font-size: 3rem;
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+.text-white {
+  color: var(--primary-white) !important;
+}
+
+.paragraph-standard {
+  font-size: 2rem;
+}
+
+.bock-text {
+  display: block;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .header-1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-1 {
+    font-size: 1rem;
+  }
+}
+
+/************ Styles Used ************/
+
+.heavy {
+  font-weight: 600;
+}
+
+.texture-cf {
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: var(--med-grey);
+  background-size: 16px 16px;
+}
+
+.btn-outline-light:hover {
+  font-weight: bold !important;
+  background-color: var(--primary-transparent-hover) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: var(--primary-orange);
+  transition: all 0.3s ease !important;
+}
+
+.btn-outline-light:focus {
+  color: var(--primary-orange);
+  font-weight: bold !important;
+  outline: none !important;
+  background-color: var(--primary-white) !important;
+  box-shadow: 0 0 0 0.2rem var(--primary-orange) !important;
+  background-color: var(--primary-transparent) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-outline-light:active {
+  border: 1px solid var(--primary-orange) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/************ Navbar Bootstrap Edit  ************/
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+}
+
+.logo-navbar {
+  width: 160px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+nav a.nav-link {
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  font-size: 13px !important;
+}
+
+.navbar-nav > li > a {
+  margin-right: 12px;
+  margin-left: 12px;
+  color: var(--primary-white) !important;
+  border-bottom: 3px solid var(--primary-transparent) !important;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-bottom: 3px solid var(--primary-orange) !important;
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 3px solid var(--primary-orange) !important;
+}
+
+.bars-icon {
+  color: var(--primary-white);
+}
+
+/*** HEADER STYLE ***/
+
+.header-wraper {
+  background: url("/static/imgs/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.header-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.btn-contacto {
+  border: 2px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 12px 12px 12px;
+  color: var(--primary-white);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: var(--light-grey);
+  color: white;
+  text-align: underline;
+  transition: all 0.3s ease;
+}
+
+/*** TECN STYLE ***/
+
+.tech-header {
+  display: flex;
+  padding-top: 3em;
+  text-align: center;
+  justify-content: center;
+}
+
+.header-pos {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .tech-info-header {
+    padding-top: 2.5em;
+  }
+
+  .header-pos {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tech-info-header {
+    padding-top: 2.5em;
+  }
+
+  .header-pos {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tech-info-header {
+    padding-top: 2em;
+  }
+
+  .header-pos {
+    width: 85%;
+  }
+}
+
+/* Conteudo Techs  */
+
+.tech-info-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tech-info-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.tech-info-sphere {
+  margin-right: 3em;
+}
+
+@media (max-width: 299px) {
+  .tech-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-info-text {
+    font-size: 1rem;
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .tech-info-sphere {
+    margin: 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .tech-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-info-text {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .tech-info-sphere {
+    margin: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .tech-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-info-text {
+    font-size: 1.2rem;
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .tech-info-sphere {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tech-info-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tech-info-text {
+    width: 50%;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+  }
+
+  .tech-info-sphere {
+    margin-right: 3em;
+  }
+}
+
+/****** SERVICOS *******/
+.servicos-wraper {
+  padding-bottom: 2em;
+}
+
+.servicos-header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.servicos-info-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 5em;
+}
+
+.card {
+  width: 22rem;
+  background-color: var(--standard-grey);
+  border: 1px solid var(--primary-white);
+}
+
+.img-space {
+  width: 100%;
+  height: 14.2vw;
+  object-fit: cover;
+}
+
+.img-craw {
+  margin-top: 20px;
+}
+
+@media (max-width: 300px) {
+  .header-pos-serv {
+    width: 95%;
+    font-size: 1.2em;
+  }
+
+  .servicos-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .card-text {
+    text-align: start;
+    font-size: 0.9em;
+  }
+
+  .img-space {
+    height: initial;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 500px) {
+  .header-pos-serv {
+    width: 95%;
+    font-size: 1.5em;
+  }
+
+  .servicos-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .card-text {
+    margin-top: 1em;
+    text-align: start;
+    font-size: 1em;
+  }
+
+  .img-space {
+    height: initial;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .header-pos-serv {
+    width: 95%;
+    font-size: 2.4em;
+  }
+
+  .servicos-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .card-text {
+    margin-top: 1em;
+    text-align: start;
+    font-size: 1.5em;
+  }
+
+  .img-space {
+    height: initial;
+  }
+}
+
+/************** ABOUT ME **********************/
+
+.sobre-wraper {
+  display: flex;
+  margin: 3em 4em 3em 5em;
+}
+
+.text-about-wraper {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-sobre {
+  text-align: start;
+}
+
+.text-about {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  font-size: 1.75em;
+}
+
+@media (max-width: 300px) {
+  .sobre-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .img-col {
+    margin-top: 3em;
+    order: 2;
+  }
+
+  .img-sobre {
+    height: 250px;
+    width: 250px;
+  }
+
+  .text-about-wraper {
+    order: 1;
+    margin-top: 2em;
+    display: flex;
+    width: 90%;
+  }
+
+  .header-sobre {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .text-about {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 500px) {
+  .sobre-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .img-col {
+    margin-top: 2em;
+    order: 2;
+  }
+
+  .img-sobre {
+    height: 350px;
+    width: 350px;
+  }
+
+  .text-about-wraper {
+    order: 1;
+    margin-top: 2em;
+    display: flex;
+    width: 90%;
+  }
+
+  .header-sobre {
+    text-align: center;
+  }
+
+  .text-about {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1050px) {
+  .sobre-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .img-col {
+    margin-top: 2em;
+    order: 2;
+  }
+
+  .img-sobre {
+    height: 450px;
+    width: 450px;
+  }
+
+  .text-about-wraper {
+    order: 1;
+    margin-top: 2em;
+    display: flex;
+    width: 90%;
+  }
+
+  .header-sobre {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .text-about {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1051px) and (max-width: 1400px) {
+  .text-about {
+    margin-top: 1.2em;
+  }
+}
+
+/************** Contacto **********************/
+.header-contato {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
