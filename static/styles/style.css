@@ -25,6 +25,10 @@ body {
   background-size: 16px 16px;
 }
 
+ul {
+  list-style: square;
+}
+
 /*** Tipografia  ***/
 
 .text-grey {
@@ -617,6 +621,10 @@ nav ul li {
 }
 
 /************** Contacto **********************/
+.contato-wraper {
+  padding-bottom: 2em;
+}
+
 .header-contato {
   display: flex;
   text-align: center;
@@ -628,14 +636,38 @@ nav ul li {
 /* Form */
 
 .form-wraper {
-  margin: 0em 2em;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  gap: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 1em;
+}
+
+.list-contato {
+  list-style: none;
+  font-size: 18px;
+}
+
+.left-panel {
+  align-items: start;
+  width: 100%;
+}
+
+.right-panel {
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+}
+
+.header-form,
+.header-info-contato {
+  text-align: start;
+  font-size: 2.4em;
 }
 
 .form-box {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .form-btn {
@@ -662,4 +694,89 @@ nav ul li {
 .btn-contatar {
   font-size: 1.2em;
   padding: 10px 100px;
+}
+
+@media (max-width: 300px) {
+  .form-wraper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .header-info-contato {
+    margin-top: 0.3em;
+  }
+
+  .header-form,
+  .header-info-contato {
+    font-size: 1.2em;
+  }
+
+  .list-contato {
+    margin-left: -2em;
+    list-style: none;
+    font-size: 0.7em;
+  }
+
+  .btn-contatar {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 75px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 500px) {
+  .form-wraper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .header-info-contato {
+    margin-top: 0.3em;
+  }
+
+  .header-form,
+  .header-info-contato {
+    font-size: 2em;
+  }
+
+  .list-contato {
+    margin-left: -2em;
+    list-style: none;
+    font-size: 1em;
+  }
+
+  .btn-contatar {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 75px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1030px) {
+  .header-info-contato {
+    margin-top: 1em;
+  }
+
+  .header-info-contato {
+    margin-top: 0.3em;
+  }
+
+  .header-form,
+  .header-info-contato {
+    font-size: 2em;
+  }
+
+  .list-contato {
+    list-style: none;
+    font-size: 1.6em;
+  }
+
+  .form-text {
+    font-size: 22px;
+  }
+
+  .btn-contatar {
+    font-size: 1.4em;
+    width: 100%;
+  }
 }
